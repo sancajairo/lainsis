@@ -1,0 +1,26 @@
+body{
+    background-color: #f7f7f7;
+    color: #898fa1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    text-align: center;
+}
+
+footer{
+    background-color: #292b2c;
+    font-size: 14px;
+    color: #f7f7f7;
+}
+
+.registro{
+    text-align: center;
+}
+
