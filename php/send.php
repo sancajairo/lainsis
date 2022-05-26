@@ -14,7 +14,7 @@
     $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
-    if(mail("correo, correo", "Mensaje de mi sitio web", $mensaje, $header))
+    if(mail("sancajairo@gmail.com", "Mensaje de mi sitio web", $mensaje, $header))
     {
         echo "Mensaje enviado correctamente";
     }
