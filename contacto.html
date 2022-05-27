@@ -70,22 +70,28 @@
       <section>
         <div class="row align-items-center">
           <div class="col-md-6">
-              <h2>CONTACTO</h2>
-              <form action="php/send.php" method="POST">
-                <div class="mb-3 mt-3">
-                  <label for="name" class="form-label">Nombre:</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Lainsis" name="name">
+              
+              <form class="formulario-contacto" id="contacto" name="contactos" action="php/send.php" method="POST">
+                <div id="res"></div>
+                <div class="form-group">
+                    <label class="form-control-label" for="formGroupExampleInput">Nombre / Razón Social</label>
+                    <input type="text" name="nombre" class="form-control nombre" id="nombre" placeholder="Sema S.A.S.">
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Correo Eléctronico:</label>
-                  <input type="email" class="form-control" id="mail" placeholder="info@lainsis.com" name="email">
+                <div class="form-group">
+                    <label class="form-control-label" for="formGroupExampleInput2">Asunto</label>
+                    <input type="text" name="asunto" class="form-control asunto" id="asunto" placeholder="Asesoría, Capacitación, Otro, etc.">
                 </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
-                  <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                </div>               
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                <div class="form-group">
+                    <label class="form-control-label" for="formGroupExampleInput3">Correo Electrónico</label>
+                    <input type="email" name="correo" class="form-control correo" id="correo" placeholder="info@semasas.com">
+                </div>
+                <div class="form-group">
+                    <style>textarea{resize:none;}</style>  
+                    <label class="form-control-label mensaje" for="formGroupExampleInput4">Mensaje</label>
+                    <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Escríbenos" ></textarea>
+                </div><br>
+                <button class="btn btn-primary" id="send">Enviar</button>
+            </form>
           </div>
           <div class="col-md-6 text-center">
               <figure>
