@@ -75,20 +75,26 @@
                 <div id="res"></div>
                 <div class="form-group">
                     <label class="form-control-label" for="formGroupExampleInput">Nombre / Razón Social</label>
-                    <input type="text" name="nombre" class="form-control nombre" id="nombre" placeholder="Sema S.A.S.">
+                    <input type="text" name="nombre" class="form-control nombre" placeholder="Sema S.A.S.">
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" for="formGroupExampleInput2">Asunto</label>
-                    <input type="text" name="asunto" class="form-control asunto" id="asunto" placeholder="Asesoría, Capacitación, Otro, etc.">
+                    <select name="asunto" class="form-control asunto">
+                      <option value="">Seleccione un asunto</option>
+                      <option value="1">Información</option>  
+                      <option value="2">Asesoría</option>
+                      <option value="3">Capacitación</option>
+                      <option value="4">Otro</option>
+                  </select>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" for="formGroupExampleInput3">Correo Electrónico</label>
-                    <input type="email" name="correo" class="form-control correo" id="correo" placeholder="info@semasas.com">
+                    <input type="email" name="correo" class="form-control correo" placeholder="info@semasas.com">
                 </div>
                 <div class="form-group">
                     <style>textarea{resize:none;}</style>  
-                    <label class="form-control-label mensaje" for="formGroupExampleInput4">Mensaje</label>
-                    <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Escríbenos" ></textarea>
+                    <label class="form-control-label mensaje" for="formGroupExampleInput4">Comentarios</label>
+                    <textarea name="mensaje" class="form-control" placeholder="Escríbenos" ></textarea>
                 </div><br>
                 <button class="btn btn-primary" id="send">Enviar</button>
             </form>
