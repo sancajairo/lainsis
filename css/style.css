@@ -19,7 +19,20 @@ footer{
     font-size: 14px;
     color: #f7f7f7;
 }
+.boton-whatsapp{
+    position: fixed;
+    right: 54px;
+    bottom: 45px;
+    width: 54px;
+    height: 54px;
+    z-index: 100;
+}
 
+@media screen and (max-width:600px){
+    .boton-whatsapp{
+        display: none;
+    }
+}
 .registro{
     text-align: center;
 }
